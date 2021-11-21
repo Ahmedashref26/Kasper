@@ -1,0 +1,88 @@
+.section-hero {
+  grid-row: 1 / 2;
+  grid-column: full-start / full-end;
+
+  background-image: $overlay-gradient, url(../images/landing.jpg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero {
+  width: 50%;
+  padding: 5rem 5rem 5rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: $color-primary-transparent;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 70%;
+  }
+  
+  @media only screen and (max-width: $bp-phone) {
+    width: 100%;
+    padding: 5rem 8rem;
+  }
+
+  &__content {
+    max-width: 50rem;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: $color-white;
+    position: absolute;
+
+    &--left {
+      left: 3rem;
+    }
+    &--right {
+      right: 3rem;
+    }
+  }
+
+}
+.dots {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  &--block {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translateX(0);
+    justify-content: center;
+    margin: 5rem 0;
+  }
+}
+
+.dot {
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--grey {
+    border: 1px solid $color-grey;
+  }
+
+  &--active {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+}

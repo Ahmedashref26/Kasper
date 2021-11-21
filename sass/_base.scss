@@ -1,0 +1,63 @@
+// COLOR VARIABLES
+$color-primary: #19c8fa;
+$color-primary-transparent: rgba(15, 116, 143, 0.702);
+
+$color-grey: #777;
+$color-grey-light: #fcfcfc;
+
+$color-black: #000;
+
+$color-white: #fff;
+
+// Other variables
+
+$section-padding: 9.6rem 0;
+$overlay-gradient: linear-gradient(
+  to right,
+  rgba($color-black, 0.64),
+  rgba($color-black, 0.64)
+);
+
+$bp-large: 75em;      // 1200px
+$bp-medium: 53.125em;     // 850px
+$bp-small: 37.5em;     // 600px
+$bp-phone: 28.125em;     // 450px
+
+// Base styles
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    ) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh;
+
+  position: relative;
+}

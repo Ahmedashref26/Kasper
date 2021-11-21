@@ -1,0 +1,15 @@
+.qoute {
+  grid-column: full-start / full-end;
+
+  background-image: $overlay-gradient, url(../images/quote.jpg);
+  background-size: cover;
+  padding: 9.6rem 3rem;
+  text-align: center;
+
+  &__text {
+    font-size: 3.2rem;
+    max-width: 112rem;
+    margin: 0 auto 3rem;
+    line-height: 1.2;
+  }
+}

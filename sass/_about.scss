@@ -1,0 +1,23 @@
+.about {
+  grid-column: center-start / center-end;
+
+  padding: $section-padding;
+  text-align: center;
+  overflow: hidden;
+
+  &__img {
+    position: relative;
+    bottom: -20rem;
+    margin-top: -19rem;
+    max-width: 100%;
+    
+    @media only screen and (max-width: $bp-medium) {
+      bottom: -25rem;
+      margin-top: -25rem;
+    }
+    
+    @media only screen and (max-width: $bp-phone) {
+      bottom: -18rem;
+    }
+  }
+}

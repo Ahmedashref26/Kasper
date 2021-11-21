@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kasper</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <nav class="nav">
+          <svg class="header__icon">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+          <ul>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="search">
+          <svg class="search__icon">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+        </form>
+      </header>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero__content">
+            <h1 class="heading-primary mb-sm">
+              Hello World! <br />We Are Kasper We Make Art.
+            </h1>
+            <p class="hero__text">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
+              sem. Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+          </div>
+          <svg class="hero__icon hero__icon--left">
+            <use xlink:href="images/sprite.svg#chevron-left"></use>
+          </svg>
+          <svg class="hero__icon hero__icon--right">
+            <use xlink:href="images/sprite.svg#chevron-right"></use>
+          </svg>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot dot--active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="section-heading">
+          <h2 class="heading-secondary">Services</h2>
+          <p class="section-heading__text">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="images/sprite.svg#tv"></use>
+            </svg>
+            <div class="feature__content">
+              <h4 class="feature__heading">Vorem amet intuitive</h4>
+              <p class="feature__text">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="images/sprite.svg#cog"></use>
+            </svg>
+            <div class="feature__content">
+              <h4 class="feature__heading">Vorem amet intuitive</h4>
+              <p class="feature__text">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="images/sprite.svg#pencil"></use>
+            </svg>
+            <div class="feature__content">
+              <h4 class="feature__heading">Vorem amet intuitive</h4>
+              <p class="feature__text">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="images/sprite.svg#camera"></use>
+            </svg>
+            <div class="feature__content">
+              <h4 class="feature__heading">Vorem amet intuitive</h4>
+              <p class="feature__text">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="design">
+        <div class="design__img-box">
+          <img src="images/mobile.png" alt="mobile image" class="design__img" />
+        </div>
+        <div class="design__content-box">
+          <div class="design__content">
+            <h2 class="heading-secondary--small mb-lg">
+              Our design comes with...
+            </h2>
+            <ul class="design__list">
+              <li class="design__items">
+                <svg class="design__icon">
+                  <use xlink:href="images/sprite.svg#chevron-right"></use>
+                </svg>
+                <span>Responsive Design</span>
+              </li>
+              <li class="design__items">
+                <svg class="design__icon">
+                  <use xlink:href="images/sprite.svg#chevron-right"></use>
+                </svg>
+                <span>Modern And Clean Design</span>
+              </li>
+              <li class="design__items">
+                <svg class="design__icon">
+                  <use xlink:href="images/sprite.svg#chevron-right"></use>
+                </svg>
+                <span>Clean Code</span>
+              </li>
+              <li class="design__items">
+                <svg class="design__icon">
+                  <use xlink:href="images/sprite.svg#chevron-right"></use>
+                </svg>
+                <span>Browser Friendly</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="section-heading">
+          <h2 class="heading-secondary">Portfolio</h2>
+          <p class="section-heading__text">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <ul class="portfolio__list mb-xlg">
+          <li class="portfolio__item portfolio__item--active">All</li>
+          <li class="portfolio__item">App</li>
+          <li class="portfolio__item">Photo</li>
+          <li class="portfolio__item">Web</li>
+          <li class="portfolio__item">Print</li>
+        </ul>
+        <div class="portfolio__gallery">
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-01.jpg"
+              alt="gallary image 1"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-02.jpg"
+              alt="gallary image 2"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-03.jpg"
+              alt="gallary image 3"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-04.jpg"
+              alt="gallary image 4"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-05.jpg"
+              alt="gallary image 5"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-06.jpg"
+              alt="gallary image 6"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-07.jpg"
+              alt="gallary image 7"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__picture">
+            <img
+              src="images/shuffle-08.jpg"
+              alt="gallary image 8"
+              class="portfolio__img"
+            />
+            <figcaption class="portfolio__caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </figcaption>
+          </figure>
+        </div>
+        <a href="#" class="btn mt-md m-center">more</a>
+      </section>
+      <section class="video">
+        <div class="video__bg">
+          <video class="video__content" muted autoplay loop>
+            <source src="images/awesome-video.mp4" type="video/mp4" />
+            Your browser is not supported
+          </video>
+        </div>
+        <div class="video__text-box">
+          <h2 class="heading-secondary--small mb-md">
+            SUPER AWESOME VIDEO HERE
+          </h2>
+          <p class="video__text mb-md">Its All You Need</p>
+          <a href="#" class="btn btn--black">see more</a>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="section-heading">
+          <h2 class="heading-secondary">About Us</h2>
+          <p class="section-heading__text">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <img src="images/about.png" alt="devices" class="about__img" />
+      </section>
+      <section class="state">
+        <div class="state__container">
+          <div class="state__feature">
+            <div class="state__icon-box">
+              <svg class="state__icon">
+                <use xlink:href="images/sprite.svg#coffee"></use>
+              </svg>
+            </div>
+            <p class="state__number">1.236</p>
+            <p class="state__text">Coffee Drinks</p>
+          </div>
+          <div class="state__feature">
+            <div class="state__icon-box">
+              <svg class="state__icon">
+                <use xlink:href="images/sprite.svg#folder"></use>
+              </svg>
+            </div>
+            <p class="state__number">256</p>
+            <p class="state__text">Completed Projects</p>
+          </div>
+          <div class="state__feature">
+            <div class="state__icon-box">
+              <svg class="state__icon">
+                <use xlink:href="images/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            <p class="state__number">1,743</p>
+            <p class="state__text">Mail Sent</p>
+          </div>
+          <div class="state__feature">
+            <div class="state__icon-box">
+              <svg class="state__icon">
+                <use xlink:href="images/sprite.svg#trophy"></use>
+              </svg>
+            </div>
+            <p class="state__number">17</p>
+            <p class="state__text">Awards Received</p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-skills">
+        <div class="testimonials">
+          <h3 class="heading-tertiary mb-md">Testimonials</h3>
+          <p class="testimonials__text mb-xlg">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="testimonials__content-box mb-md">
+            <img
+              src="images/hannah.jpg"
+              alt="person photo 1"
+              class="testimonials__img"
+            />
+            <div class="testimonials__content mb-md">
+              <p class="testimonials__testimony">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+              </p>
+              <p class="testimonials__name">&mdash; Hannah Smith, CEO</p>
+            </div>
+          </div>
+          <div class="testimonials__content-box">
+            <img
+              src="images/steve.jpg"
+              alt="person photo 1"
+              class="testimonials__img"
+            />
+            <div class="testimonials__content">
+              <p class="testimonials__testimony">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+              </p>
+              <p class="testimonials__name">&mdash; Steve Miller, COO</p>
+            </div>
+          </div>
+          <div class="dots dots--block">
+            <span class="dot dot--grey"></span>
+            <span class="dot dot--grey dot--active"></span>
+            <span class="dot dot--grey"></span>
+          </div>
+        </div>
+        <div class="skills">
+          <h3 class="heading-tertiary mb-md">Skills</h3>
+          <p class="skills__text mb-xlg">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="skills__skill-box">
+            <div class="skills__skill-bar">
+              <h4 class="skills__heading">Adobe</h4>
+              <div class="skills__bar">
+                <span style="width: 90%" data-progress="90%"></span>
+              </div>
+            </div>
+            <div class="skills__skill-bar">
+              <h4 class="skills__heading">HTML & CSS</h4>
+              <div class="skills__bar">
+                <span style="width: 80%" data-progress="80%"></span>
+              </div>
+            </div>
+            <div class="skills__skill-bar">
+              <h4 class="skills__heading">JavaScript</h4>
+              <div class="skills__bar">
+                <span style="width: 85%" data-progress="85%"></span>
+              </div>
+            </div>
+            <div class="skills__skill-bar">
+              <h4 class="skills__heading">PHP</h4>
+              <div class="skills__bar">
+                <span style="width: 90%" data-progress="90%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="qoute">
+        <blockquote class="qoute__text">
+          <q
+            >accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+            elit, eget tincidunt.</q
+          >
+        </blockquote>
+        <p class="qoute__author">&mdash;Sarah Johnson</p>
+      </section>
+      <section class="pricing" id="pricing">
+        <div class="section-heading">
+          <h2 class="heading-secondary">Pricing</h2>
+          <p class="section-heading__text">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="pricing__plans">
+          <div class="pricing__plan">
+            <div class="pricing__plan-header">
+              <h3 class="heading-tertiary mb-sm">Basic</h3>
+              <span class="pricing__plan-price">19</span>
+            </div>
+            <ul class="pricing__feature">
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Extra Feature 1</li>
+              <li class="pricing__item">Extra Feature 2</li>
+            </ul>
+            <div class="pricing__cta">
+              <a href="#" class="btn btn--cta">Buy Now</a>
+            </div>
+          </div>
+          <div class="pricing__plan">
+            <div class="pricing__plan-header">
+              <h3 class="heading-tertiary mb-sm">Premium</h3>
+              <span class="pricing__plan-price">29</span>
+            </div>
+            <ul class="pricing__feature">
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Extra Feature 1</li>
+              <li class="pricing__item">Extra Feature 2</li>
+            </ul>
+            <div class="pricing__cta">
+              <a href="#" class="btn btn--cta">Buy Now</a>
+            </div>
+          </div>
+          <div class="pricing__plan">
+            <div class="pricing__plan-header">
+              <h3 class="heading-tertiary mb-sm">Pro</h3>
+              <span class="pricing__plan-price">39</span>
+            </div>
+            <ul class="pricing__feature">
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Extra Feature 1</li>
+              <li class="pricing__item">Extra Feature 2</li>
+            </ul>
+            <div class="pricing__cta">
+              <a href="#" class="btn btn--cta">Buy Now</a>
+            </div>
+          </div>
+          <div class="pricing__plan">
+            <div class="pricing__plan-header">
+              <h3 class="heading-tertiary mb-sm">Platinum</h3>
+              <span class="pricing__plan-price">49</span>
+            </div>
+            <ul class="pricing__feature">
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Feature No 1</li>
+              <li class="pricing__item">Extra Feature 1</li>
+              <li class="pricing__item">Extra Feature 2</li>
+            </ul>
+            <div class="pricing__cta">
+              <a href="#" class="btn btn--cta">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <p class="pricing__text">Contact us if you have special request</p>
+        <a href="#contact" class="btn m-center">Contact Us</a>
+      </section>
+      <section class="cta">
+        <div class="cta__container">
+          <form action="#" class="cta__form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="cta__email"
+            />
+            <button class="btn btn--form">Subscripe</button>
+            <svg class="cta__icon">
+              <use xlink:href="images/sprite.svg#mail"></use>
+            </svg>
+          </form>
+          <p class="cta__text">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blan dit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="section-heading">
+          <h2 class="heading-secondary">Contact Us</h2>
+          <p class="section-heading__text">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="contact__container">
+            <form action="#" class="contact__form">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="contact__name"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="contact__mail"
+              />
+              <textarea
+                placeholder="Your Message"
+                cols="30"
+                rows="10"
+                class="contact__msg"
+              ></textarea>
+              <button class="btn btn--form ml-auto">Send Message</button>
+            </form>
+            <div class="contact__info">
+              <div class="contact__details">
+                <h4 class="contact__details--heading">Get in touch</h4>
+                <p class="contact__details--text">+00 123.456.789</p>
+                <p class="contact__details--text">+00 123.456.789</p>
+              </div>
+              <div class="contact__details">
+                <h4 class="contact__details--heading">Where We Are</h4>
+                <address class="contact__address">
+                  Awesome Address 17<br />
+                  New York, NYC<br />
+                  123-4567-890<br />
+                  USA
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <a href="#"><img src="images/logo.png" alt="logo image" class="footer__logo" /></a>
+        <div class="footer__social">
+          <h3 class="footer__header">We are social</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a
+                href="https://www.facebook.com/ahmed.ashref.26"
+                class="footer__link"
+                ><svg class="footer__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="https://twitter.com/ahmedashref2102" class="footer__link"
+                ><svg class="footer__icon">
+                  <use xlink:href="images/sprite.svg#twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><svg class="footer__icon">
+                  <use xlink:href="images/sprite.svg#home"></use></svg
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a
+                href="https://www.linkedin.com/in/ahmedashref2102/"
+                class="footer__link"
+                ><svg class="footer__icon">
+                  <use xlink:href="images/sprite.svg#linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2021 <strong>Kasper</strong> All Right Reserved
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

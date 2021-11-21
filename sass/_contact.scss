@@ -1,0 +1,79 @@
+.contact {
+  grid-column: center-start / center-end;
+  padding: $section-padding;
+
+  &__container {
+    color: $color-black;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-phone) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__form {
+    flex-basis: 70%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__name,
+  &__mail,
+  &__msg {
+    font-family: inherit;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    outline: none;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      font-size: 100%;
+      line-height: 1.15;
+    }
+  }
+
+  &__msg {
+    font-size: 100%;
+  }
+
+  &__info {
+    flex-basis: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    align-items: flex-start;
+    
+    @media only screen and (max-width: $bp-phone) {
+      align-items: center;
+      gap: 3rem;
+      flex-basis: 50%;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__details {
+    text-align: left;
+  }
+
+  &__details--heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    
+    @media only screen and (max-width: $bp-phone) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__details--text,
+  &__address {
+    line-height: 2;
+    color: #777;
+  }
+}

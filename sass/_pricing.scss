@@ -1,0 +1,91 @@
+.pricing {
+  grid-column: center-start / center-end;
+  padding: $section-padding;
+  color: $color-black;
+
+&__plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+&__plan {
+  background-color: $color-grey-light;
+  text-align: center;
+  line-height: 1.2;
+  box-shadow: 0 0.6rem 2rem rgb(0 0 0 / 8%);
+}
+
+&__plan-header {
+  padding: 4rem 2rem;
+  border-top: 1px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+}
+
+&__plan-price {
+  font-size: 6rem;
+  font-weight: 500;
+
+  &::before {
+    content: '$';
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    position: relative;
+    top: -4rem;
+    right: 1.5rem;
+    
+  }
+  
+  &::after {
+    content: '/Mo';
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    right: -1.5rem;
+  }
+}
+
+&__feature {
+  list-style: none;
+  border-bottom: 1px solid $color-primary;
+  display: flex;
+  flex-direction: column;
+  // gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+&__item {
+  padding: 2rem;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14rem;
+    height: .1rem;
+    background-color: $color-primary;
+  }
+}
+
+&__cta {
+  margin: 3rem auto;
+}
+
+&__text {
+  margin: 4rem 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+}
